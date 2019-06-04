@@ -7,23 +7,59 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body id="container-general">
-    <header>
-        <h1>Hermandad de la Media Luna</h1>
-    </header>
-    <main>
-        <div class=" imgcontainer ">
-            <img src="img_avatar2.png " alt="Avatar " class="avatar ">
-        </div>
-        <div class="container ">
-            <label for="psw "><b>Ingrese la clave</b></label>
-            <input type="password " placeholder="Escriba la clave " name="psw " required>
+<body>
+    <section id="pagLogin" class="pagGeneral">
+        <header>
+            <h1>Hermandad de la Media Luna</h1>
+        </header>
+        <main>
+            <div class=" imgcontainer ">
+                <img id="imglogin" src="Img/medialuna.png" alt="Avatar " class="avatar ">
+            </div>
+            <!-- <form action=""> -->
+            <div class="container ">
+                <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
+                <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
+                <input type="submit" value="Login" id="btnlogin" class="boton" required> 
+                <!-- <button type="button " id="btnlogin">Login</button> -->
+            </div>
+        <!-- </form> -->
+        </main>
+        <footer>
+        </footer>
+    </section>
+    <section id="pagCifrado" class="pagGeneral">
+        <header>
+            <h1>Cifrado y Descifrado de mensajes</h1>
+        </header>   
+        <main>
+            <div class="clavecipher">
+                <label for="" class="labels"><b>Clave del cifrado</b></label>
+                <input type="number" min="1" max="27" id="claveCifrado">
+            </div>
+            <div>
+                <label for="" class="labels"><b>Ingrese el mensaje</b></label>
+                <textarea name="textarea" rows="10" cols="50" placeholder="Ingrese el mensaje">fd</textarea>
+               
+            </div>
+            <div>
+                <input type="submit" value="Cifrar" id="btnCifrar" class="boton" required> 
+                <input type="submit" value="Descifrar" id="btnDescifrar" class="boton" required> 
+                <input type="submit" value="Borrar" id="btnBorrar" class="boton" required> 
+            </div>
+            <div>
+                    <label for="" class="labels"><b>Mensaje descifrado</b></label>
+                    <textarea name="textarea" rows="10" cols="50" >fd</textarea>
+                </div>
+                <div>
+                        <input type="submit" value="Salir" id="btnSalir" class="boton" required> 
 
-            <button type="submit ">Login</button>
+                </div>
+        </main>
+        <footer>
+        </footer>
+    </section>
 
-        </div>
-    </main>
-    <footer></footer>
     <script src="cipher.js "></script>
     <script src="index.js "></script>
 </body>
