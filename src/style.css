@@ -13,22 +13,31 @@ input[type=password] {
     border: 2px outset #1C6EA4;
 }
 h1{
-    text-shadow: 3px 1px 5px rgba(164,16,76,0.58);
+    text-shadow: 3px 1px 5px rgba(5, 5, 5, 0.58);
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
 }
 
 #btnlogin {
-    background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
     cursor: pointer;
     width: 100%;
+    font-size: 20px; 
+    line-height: 18px; 
+    border-radius: 7px; 
+    font-family: Georgia, serif; 
+    background-image: linear-gradient(to right, rgb(16, 136, 53) 0%, #2bc731 50%, rgb(8, 173, 82) 100%);
+    /* box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;  */
+    border: 2px solid rgb(10, 125, 67);
+    display: inline-block
 }
-#imglogin{
+.imgIcon{
     margin:10px auto;
     display:block;
-    width: 100px;
+    width: 90px;
 }
 .labels{
     font-size: x-large;
@@ -40,25 +49,83 @@ h1{
     padding: 0em;
     border-radius: 0em;
 }
-#claveCifrado{
+#offset{
     border: 2px outset #1C6EA4;
+    padding: 3px 10px;
+    margin: 8px 0;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
 }
 .clavecipher{
-    padding-left: 200px;
+    padding-left: 481px;
 }
 #pagLogin {
     width: 35%;
+    padding: 30px;
+    background-color: rgba(223, 177, 207, 0.74);
+    border-radius: 20px;
+    border: 2px solid rgb(14, 15, 15);
+    margin-top: 100px;
 }
+.hide {display:none;}
 #pagCifrado{
     width: 50%;
-    /* display: none; */
+     padding: 15px;
+     background-color: rgba(223, 177, 207, 0.74);
+    border-radius: 20px;
+    border: 2px solid rgb(14, 15, 15);
 }
-input[type=textarea]{
+.textarea{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
+    height: 80px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border: 2px outset #1C6EA4;
 }
+.boton{
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 20px; 
+    line-height: 18px; 
+    border-radius: 7px; 
+    font-family: Georgia, serif; 
+    display: inline-block
+}
+#btnDescifrar{
+    background-image: linear-gradient(to right, rgb(16, 136, 53) 0%, #2bc731 50%, rgb(8, 173, 82) 100%);
+    border: 2px solid rgb(10, 125, 67);
+}
+#btnCifrar{
+    background-image: linear-gradient(to right, rgb(169, 20, 96) 0%, rgba(216, 53, 120, 0.58) 50%, rgba(224, 97, 149, 0.58) 100%);
+    border: 2px solid rgb(169, 20, 96);
+}
+#btnBorrar{
+    background-image: linear-gradient(to right, #b7aeae 0%, #d2a0de 50%, rgb(113, 112, 109) 100%);
+    border: 2px solid #827a7a;
+}
+#btnSalir{
+    background-image: linear-gradient(to right, #b7aeae 0%, #252525 50%, rgb(113, 112, 109) 100%);
+    border: 2px solid #101010;
+}
+.botones{
+    padding-left: 155px;
+}
+.btnsalir{
+    padding-left: 670px;
+}
+#pag1{   
+    width: 100%; height: 100; 
+    background-image:url(img/hermandad.PNG);  
+}
+#errorMessage{
+    color: red;
+    font-weight: bold;
+}
+
+

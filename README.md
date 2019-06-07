@@ -32,10 +32,8 @@ Los usuarios son un grupo de amigas de 2do grado de secundaria son parte de una 
 Solucion: La pagina de Mensajes cifrados de la hermandad es exclusiva para este grupo de amigas ya que cuenta con una clave inicial para acceder a la pagina de cifrado y descifrado de mensajes, ya en la segunda pagina los usuarios tendran una segunda clave exclusivo del mensaje para cifrar y descifrar(esta clave puede variar para cada mensaje)
 
 ### Primer prototipo
-Prototipo baja fidelidad primera página
 ![hola](imagenproject/readme1.jpg)
 
-Prototipo baja fidelidad segunda página
 ![hola](imagenproject/readme2.jpg)
 ### Feedback
 El feedback recivido fue:

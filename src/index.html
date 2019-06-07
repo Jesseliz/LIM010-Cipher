@@ -7,54 +7,66 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body id="pag1" class="container">
+    <!-- <img id="imgpag1" src="img/hermandad.jpg" alt=""> -->
     <section id="pagLogin" class="pagGeneral">
         <header>
             <h1>Hermandad de la Media Luna</h1>
         </header>
         <main>
             <div class=" imgcontainer ">
-                <img id="imglogin" src="Img/medialuna.png" alt="Avatar " class="avatar ">
+                <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Avatar " class="avatar ">
             </div>
-            <!-- <form action=""> -->
+            <!-- <form action="">   -->
             <div class="container ">
                 <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
                 <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
-                <input type="submit" value="Login" id="btnlogin" class="boton" required> 
-                <!-- <button type="button " id="btnlogin">Login</button> -->
+                <span id="errorMessage"></span>
+                <!-- <input type="submit" value="Login" id="btnlogin" class="boton" required>   -->
+                <button type="button " id="btnlogin" class="boton">Login</button>
             </div>
-        <!-- </form> -->
+            <!-- </form>    -->
         </main>
         <footer>
         </footer>
     </section>
     <section id="pagCifrado" class="pagGeneral">
         <header>
-            <h1>Cifrado y Descifrado de mensajes</h1>
-        </header>   
+            <table>
+                <th>
+                    <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png"></td>
+                    <td><h1>Cifrado y Descifrado de mensajes</h1></td>
+                    <td><img id="imgEyeLash" class="imgIcon" src="Img/eye.png" alt=""></td>
+                </th>
+            </table>
+        </header>
         <main>
+            <!-- <div class=" imgcontainer ">
+                        <img class="imgIcon" src="Img/eye-slash.png" alt="Avatar " class="avatar ">
+                  </div> -->
             <div class="clavecipher">
-                <label for="" class="labels"><b>Clave del cifrado</b></label>
-                <input type="number" min="1" max="27" id="claveCifrado">
+                <label for="" class="labels"><b>Clave del cifrado: </b></label>
+                <input type="number" min="1" max="300" id="offset">
             </div>
             <div>
                 <label for="" class="labels"><b>Ingrese el mensaje</b></label>
-                <textarea name="textarea" rows="10" cols="50" placeholder="Ingrese el mensaje">fd</textarea>
-               
-            </div>
-            <div>
-                <input type="submit" value="Cifrar" id="btnCifrar" class="boton" required> 
-                <input type="submit" value="Descifrar" id="btnDescifrar" class="boton" required> 
-                <input type="submit" value="Borrar" id="btnBorrar" class="boton" required> 
-            </div>
-            <div>
-                    <label for="" class="labels"><b>Mensaje descifrado</b></label>
-                    <textarea name="textarea" rows="10" cols="50" >fd</textarea>
-                </div>
-                <div>
-                        <input type="submit" value="Salir" id="btnSalir" class="boton" required> 
+                <textarea id="FirstText" class="textarea" rows="10" cols="50"
+                    placeholder="Escribe aqui el mensaje"></textarea>
 
-                </div>
+            </div>
+            <div class="botones">
+                <input type="submit" value="Cifrar" id="btnCifrar" class="boton">
+                <input type="submit" value="Descifrar" id="btnDescifrar" class="boton">
+                <input type="submit" value="Borrar" id="btnBorrar" class="boton">
+            </div>
+            <div>
+                <label for="" class="labels"><b>Resultado del mensaje</b></label>
+                <textarea id="resultText" class="textarea" rows="10" cols="50"
+                    placeholder="Escribe aqui el mensaje"></textarea>
+            </div>
+            <div class="btnsalir">
+                <input type="submit" value="Salir" id="btnSalir" class="boton" required>
+            </div>
         </main>
         <footer>
         </footer>
