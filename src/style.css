@@ -57,9 +57,7 @@ h1{
     text-align: center;
     font-weight: bold;
 }
-.clavecipher{
-    padding-left: 481px;
-}
+
 #pagLogin {
     width: 35%;
     padding: 30px;
@@ -123,9 +121,18 @@ h1{
     width: 100%; height: 100; 
     background-image:url(img/hermandad.PNG);  
 }
-#errorMessage{
+.errorMessage{
     color: red;
     font-weight: bold;
+    /* mask-image: url(Img/warning.png); */
 }
-
+#aviso{
+    border: 2px solid #bb134a;
+    padding: 8px 10px;
+    margin: 8px 0;
+    margin-left: 20px;
+}
+#warning{
+    width: 30px;
+}
 

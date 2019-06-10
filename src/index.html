@@ -17,15 +17,18 @@
             <div class=" imgcontainer ">
                 <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Avatar " class="avatar ">
             </div>
-            <!-- <form action="">   -->
+
             <div class="container ">
-                <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
-                <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
-                <span id="errorMessage"></span>
-                <!-- <input type="submit" value="Login" id="btnlogin" class="boton" required>   -->
-                <button type="button " id="btnlogin" class="boton">Login</button>
+                <!-- <form action="#"> -->
+                    <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
+                    <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
+                    
+                    <span id="errorMessage" class="errorMessage"></span>
+                    <!-- <input type="submit" value="Login" id="btnlogin" class="boton" required>   -->
+                    <button type="button " id="btnlogin" class="boton">Login</button>
+                <!-- </form> -->
             </div>
-            <!-- </form>    -->
+
         </main>
         <footer>
         </footer>
@@ -34,9 +37,11 @@
         <header>
             <table>
                 <th>
-                    <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png"></td>
-                    <td><h1>Cifrado y Descifrado de mensajes</h1></td>
-                    <td><img id="imgEyeLash" class="imgIcon" src="Img/eye.png" alt=""></td>
+                <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png"></td>
+                <td>
+                    <h1>Cifrado y Descifrado de mensajes</h1>
+                </td>
+                <td><img id="imgEyeLash" class="imgIcon" src="Img/eye.png" alt=""></td>
                 </th>
             </table>
         </header>
@@ -45,20 +50,23 @@
                         <img class="imgIcon" src="Img/eye-slash.png" alt="Avatar " class="avatar ">
                   </div> -->
             <div class="clavecipher">
-                <label for="" class="labels"><b>Clave del cifrado: </b></label>
+                <label for="" class="labels"><b>Clave: </b></label>
                 <input type="number" min="1" max="300" id="offset">
+                <label id="aviso" for="" class=""><img id="warning" src="IMG/warning.png" alt=""> <b>Recuerda que este código es la llave para cifrar y descifrar el mensaje. </b></label>
+                <span id="spantxt1" class="errorMessage"></span>
             </div>
+            </br>
             <div>
                 <label for="" class="labels"><b>Ingrese el mensaje</b></label>
                 <textarea id="FirstText" class="textarea" rows="10" cols="50"
                     placeholder="Escribe aqui el mensaje"></textarea>
-
             </div>
             <div class="botones">
                 <input type="submit" value="Cifrar" id="btnCifrar" class="boton">
                 <input type="submit" value="Descifrar" id="btnDescifrar" class="boton">
-                <input type="submit" value="Borrar" id="btnBorrar" class="boton">
+                <input type="submit" value="Limpiar" id="btnBorrar" class="boton">
             </div>
+        </br>
             <div>
                 <label for="" class="labels"><b>Resultado del mensaje</b></label>
                 <textarea id="resultText" class="textarea" rows="10" cols="50"
