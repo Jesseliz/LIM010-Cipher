@@ -15,17 +15,17 @@
         </header>
         <main>
             <div class=" imgcontainer ">
-                <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Avatar " class="avatar ">
+                <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Avatar">
             </div>
 
             <div class="container ">
                 <!-- <form action="#"> -->
-                    <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
-                    <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
-                    
-                    <span id="errorMessage" class="errorMessage"></span>
-                    <!-- <input type="submit" value="Login" id="btnlogin" class="boton" required>   -->
-                    <button type="button " id="btnlogin" class="boton">Login</button>
+                <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
+                <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
+
+                <span id="errorMessage" class="errorMessage"></span>
+                <!-- <input type="submit" value="Login" id="btnlogin" class="boton" required>   -->
+                <button id="btnlogin" class="boton">Login</button>
                 <!-- </form> -->
             </div>
 
@@ -36,13 +36,13 @@
     <section id="pagCifrado" class="pagGeneral">
         <header>
             <table>
-                <th>
-                <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png"></td>
-                <td>
-                    <h1>Cifrado y Descifrado de mensajes</h1>
-                </td>
-                <td><img id="imgEyeLash" class="imgIcon" src="Img/eye.png" alt=""></td>
-                </th>
+                <tr>
+                    <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png" alt=""></td>
+                    <td>
+                        <h1>Cifrado y Descifrado de mensajes</h1>
+                    </td>
+                    <td><img id="imgEye" class="imgIcon" src="Img/eye.png" alt=""></td>
+                </tr>
             </table>
         </header>
         <main>
@@ -50,14 +50,15 @@
                         <img class="imgIcon" src="Img/eye-slash.png" alt="Avatar " class="avatar ">
                   </div> -->
             <div class="clavecipher">
-                <label for="" class="labels"><b>Clave: </b></label>
+                <label  class="labels"><b>Clave: </b></label>
                 <input type="number" min="1" max="300" id="offset">
-                <label id="aviso" for="" class=""><img id="warning" src="IMG/warning.png" alt=""> <b>Recuerda que este código es la llave para cifrar y descifrar el mensaje. </b></label>
+                <label id="aviso" class=""><img id="warning" src="IMG/warning.png" alt=""> <b>Recuerda que este
+                        código es la llave para cifrar y descifrar el mensaje. </b></label>
                 <span id="spantxt1" class="errorMessage"></span>
             </div>
-            </br>
+            <br>
             <div>
-                <label for="" class="labels"><b>Ingrese el mensaje</b></label>
+                <label class="labels"><b>Ingrese el mensaje</b></label>
                 <textarea id="FirstText" class="textarea" rows="10" cols="50"
                     placeholder="Escribe aqui el mensaje"></textarea>
             </div>
@@ -66,14 +67,14 @@
                 <input type="submit" value="Descifrar" id="btnDescifrar" class="boton">
                 <input type="submit" value="Limpiar" id="btnBorrar" class="boton">
             </div>
-        </br>
+            <br>
             <div>
-                <label for="" class="labels"><b>Resultado del mensaje</b></label>
+                <label class="labels"><b>Resultado del mensaje</b></label>
                 <textarea id="resultText" class="textarea" rows="10" cols="50"
                     placeholder="Escribe aqui el mensaje"></textarea>
             </div>
             <div class="btnsalir">
-                <input type="submit" value="Salir" id="btnSalir" class="boton" required>
+                <input type="submit" value="Salir" id="btnSalir" class="boton">
             </div>
         </main>
         <footer>
