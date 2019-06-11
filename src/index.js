@@ -5,8 +5,8 @@ const paglogin = document.getElementById('pagLogin');
 const pagCifrado = document.getElementById('pagCifrado');
 pagCifrado.classList.add("hide");
 let intentos = 0;
-btnlogin.addEventListener('click', (evento) => {
-     evento.preventDefault();
+btnlogin.addEventListener('click', () => {
+    //  evento.preventDefault();
     let password = document.getElementById("psw");
     let errorMessage = document.getElementById("errorMessage");
 
