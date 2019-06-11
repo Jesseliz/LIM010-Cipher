@@ -9,42 +9,46 @@
 
 <body id="pag1" class="container">
     <!-- <img id="imgpag1" src="img/hermandad.jpg" alt=""> -->
-    <main><form action="#"> 
-    <section id="pagLogin" class="pagGeneral">
-        <div>
-            <h1>Hermandad de la Media Luna</h1>
-        </div>
-        
+    <main>
+
+        <section id="pagLogin" class="pagGeneral">
+            <div>
+                <h1>Hermandad de la Media Luna</h1>
+            </div>
+
             <div class=" imgcontainer ">
                 <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Avatar">
             </div>
 
             <div class="container ">
-                
+
                 <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
-                <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
-                <span id="errorMessage" class="errorMessage"></span>
-                <input type="submit" value="Login" id="btnlogin" class="boton">   
-            </div> 
-    </section></form> 
-    <section id="pagCifrado" class="pagGeneral">
-        <div>
-            <table>
-                <tr>
-                    <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png" alt=""></td>
-                    <td>
-                        <h1>Cifrado y Descifrado de mensajes</h1>
-                    </td>
-                    <td><img id="imgEye" class="imgIcon" src="Img/eye.png" alt=""></td>
-                </tr>
-            </table>
-        </div>
-       
+                <form action="#">
+                    <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
+                    <span id="errorMessage" class="errorMessage"></span>
+                    <input type="submit" value="Login" id="btnlogin" class="boton">
+                </form>
+            </div>
+        </section>
+
+        <section id="pagCifrado" class="pagGeneral">
+            <div>
+                <table>
+                    <tr>
+                        <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png" alt=""></td>
+                        <td>
+                            <h1>Cifrado y Descifrado de mensajes</h1>
+                        </td>
+                        <td><img id="imgEye" class="imgIcon" src="Img/eye.png" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+
             <!-- <div class=" imgcontainer ">
                         <img class="imgIcon" src="Img/eye-slash.png" alt="Avatar " class="avatar ">
                   </div> -->
             <div class="clavecipher">
-                <label  class="labels"><b>Clave: </b></label>
+                <label class="labels"><b>Clave: </b></label>
                 <input type="number" min="1" max="300" id="offset">
                 <label id="aviso" class=""><img id="warning" src="IMG/warning.png" alt=""> <b>Recuerda que este
                         código es la llave para cifrar y descifrar el mensaje. </b></label>
@@ -70,12 +74,13 @@
             <div class="btnsalir">
                 <input type="submit" value="Salir" id="btnSalir" class="boton">
             </div>
-        
-        
-    </section>
-</main>
+
+
+        </section>
+    </main>
     <footer>
-            <div id="copyright">Copyright&copy; 2019 - Página creada por Yesseliz Choque - Todos los derechos reservados</div>
+        <div id="copyright">Copyright&copy; 2019 - Página creada por Yesseliz Choque - Todos los derechos reservados
+        </div>
     </footer>
     <script src="cipher.js "></script>
     <script src="index.js "></script>
