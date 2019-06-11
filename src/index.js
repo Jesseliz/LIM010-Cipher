@@ -75,7 +75,7 @@ btnSalir.addEventListener('click', () => {
     pagCifrado.classList.add("hide");
     document.getElementById("psw").value = "";
     document.getElementById("errorMessage").value = "";
-    firstString.value = "";
-    clave.value = "";
+    string.value = "";
+    offset.value = "";
     stringResult.value = "";
 })
