@@ -9,32 +9,29 @@
 
 <body id="pag1" class="container">
     <!-- <img id="imgpag1" src="img/hermandad.jpg" alt=""> -->
+    <main><form action="#"> 
     <section id="pagLogin" class="pagGeneral">
-        <header>
+        <div>
             <h1>Hermandad de la Media Luna</h1>
-        </header>
-        <main>
+        </div>
+        
             <div class=" imgcontainer ">
                 <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Avatar">
             </div>
 
             <div class="container ">
-                <!-- <form action="#"> -->
+                
                 <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
                 <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
 
                 <span id="errorMessage" class="errorMessage"></span>
-                <!-- <input type="submit" value="Login" id="btnlogin" class="boton" required>   -->
-                <button id="btnlogin" class="boton">Login</button>
-                <!-- </form> -->
-            </div>
-
-        </main>
-        <footer>
-        </footer>
-    </section>
+                <input type="submit" value="Login" id="btnlogin" class="boton" required>   
+                <!-- <button id="btnlogin" class="boton">Login</button> -->
+                
+            </div> 
+    </section></form> 
     <section id="pagCifrado" class="pagGeneral">
-        <header>
+        <div>
             <table>
                 <tr>
                     <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png" alt=""></td>
@@ -44,8 +41,8 @@
                     <td><img id="imgEye" class="imgIcon" src="Img/eye.png" alt=""></td>
                 </tr>
             </table>
-        </header>
-        <main>
+        </div>
+       
             <!-- <div class=" imgcontainer ">
                         <img class="imgIcon" src="Img/eye-slash.png" alt="Avatar " class="avatar ">
                   </div> -->
@@ -76,11 +73,13 @@
             <div class="btnsalir">
                 <input type="submit" value="Salir" id="btnSalir" class="boton">
             </div>
-        </main>
-        <footer>
-        </footer>
+        
+        
     </section>
-
+</main>
+    <footer>
+            <div id="copyright">Copyright&copy; 2019 - Página creada por Yesseliz Choque - Todos los derechos reservados</div>
+    </footer>
     <script src="cipher.js "></script>
     <script src="index.js "></script>
 </body>
