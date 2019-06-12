@@ -51,8 +51,6 @@ btnCipher.addEventListener('click', () => {
 const btnDeCipher = document.getElementById("btnDescifrar");
 btnDeCipher.addEventListener('click', () => {
     if (string.value !== '') {
-        // let string2 = string.value;
-        // let offset2 = offset.value;
         let resultado = cipher.decode(offset.value, string.value);
         stringResult.value = resultado;
     }

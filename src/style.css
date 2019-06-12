@@ -25,10 +25,10 @@ h1{
     margin: 8px 0;
     cursor: pointer;
     width: 100%;
-    font-size: 20px; 
-    line-height: 18px; 
-    border-radius: 7px; 
-    font-family: Georgia, serif; 
+    font-size: 20px;
+    line-height: 18px;
+    border-radius: 7px;
+    font-family: Georgia, serif;
     background-image: linear-gradient(to right, rgb(16, 136, 53) 0%, #2bc731 50%, rgb(8, 173, 82) 100%);
     /* box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;  */
     border: 2px solid rgb(10, 125, 67);
@@ -89,10 +89,10 @@ h1{
     padding: 14px 20px;
     margin: 8px 0;
     cursor: pointer;
-    font-size: 20px; 
-    line-height: 18px; 
-    border-radius: 7px; 
-    font-family: Georgia, serif; 
+    font-size: 20px;
+    line-height: 18px;
+    border-radius: 7px;
+    font-family: Georgia, serif;
     display: inline-block
 }
 #btnDescifrar{
@@ -117,9 +117,10 @@ h1{
 .btnsalir{
     padding-left: 670px;
 }
-#pag1{   
-    width: 100%; height: 100; 
-    background-image:url(https://raw.githubusercontent.com/Jesseliz/LIM010-Cipher/master/src/Img/hermandad.png);  
+#pag1{
+    /* width: 100%; height: 100%; */
+    background-image: url(Img/hermandad.png)
+    /* background-image:url(https://raw.githubusercontent.com/Jesseliz/LIM010-Cipher/master/src/Img/hermandad.png); */
 }
 .errorMessage{
     color: red;
@@ -137,7 +138,7 @@ h1{
 }
 #copyright{
     text-align: center;
-    margin-top: 50px;  
+    margin-top: 50px;
     font-weight: bold;
 }
 
