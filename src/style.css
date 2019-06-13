@@ -125,6 +125,7 @@ h1{
 .errorMessage{
     color: red;
     font-weight: bold;
+   
     /* mask-image: url(Img/warning.png); */
 }
 #aviso{

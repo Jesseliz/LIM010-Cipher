@@ -38,25 +38,35 @@ let span1 = document.getElementById('spantxt1');
 
 const btnCipher = document.getElementById("btnCifrar");
 btnCipher.addEventListener('click', () => {
-    if (string.value !== '') {
+    if (offset.value == '') {
+        span1.innerHTML = "Ingrese la clave";
+        offset.focus();
+    }
+    else if (string.value == '') {
+         span1.innerHTML = "Ingrese el texto";
+         string.focus();
+    }
+    else{
+        span1.innerHTML = "";
         let resultado = cipher.encode(offset.value, string.value);
         stringResult.value = resultado;
-    }
-    else {
-         span1.innerHTML = "Ingrese la contraseña";
-        span1.focus();
     }
 })
 
 const btnDeCipher = document.getElementById("btnDescifrar");
 btnDeCipher.addEventListener('click', () => {
-    if (string.value !== '') {
+    if (offset.value == '') {
+        span1.innerHTML = "Ingrese la clave";
+        offset.focus();
+    }
+    else if (string.value == '') {
+         span1.innerHTML = "Ingrese el texto";
+         string.focus();
+    }
+    else{
+        span1.innerHTML = "";
         let resultado = cipher.decode(offset.value, string.value);
         stringResult.value = resultado;
-    }
-    else {
-        span1.innerHTML = "Ingrese la contraseña";
-        span1.focus();
     }
 })
 
@@ -65,6 +75,7 @@ btnLimpiar.addEventListener('click', () => {
     string.value = "";
     offset.value = "";
     stringResult.value = "";
+    span1.innerHTML = "";
 })
 
 const btnSalir = document.getElementById('btnSalir');
@@ -76,4 +87,5 @@ btnSalir.addEventListener('click', () => {
     string.value = "";
     offset.value = "";
     stringResult.value = "";
+    span1.innerHTML = "";
 })
