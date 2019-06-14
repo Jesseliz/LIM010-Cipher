@@ -24,6 +24,7 @@ btnlogin.addEventListener('click', (evento) => {
             }
             else {
                 password.disabled = true;
+                btnlogin.disabled = true;
                 errorMessage.innerHTML = "Ya utilizaste todos tus intentos, en este momento no podrás ingresar";
             }
         }
