@@ -159,7 +159,6 @@ background-image: url(Img/clave.png);
 }
 #pag1{
     background-image: url(Img/hermandad.png)
-    /* background-image:url(https://raw.githubusercontent.com/Jesseliz/LIM010-Cipher/master/src/Img/hermandad.png); */
 }
 .errorMessage{
     color: red;
