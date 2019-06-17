@@ -2,86 +2,99 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/b5efdc9698.js"></script>
+  <link rel="icon" type="imagen/png" href="Img/medialuna.png">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Courgette|Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body id="pag1" class="container">
-    <!-- <img id="imgpag1" src="img/hermandad.jpg" alt=""> -->
-    <main>
-        <section id="pagLogin" class="pagGeneral">
-            <div>
-                <h1>Hermandad de la Media Luna</h1>
-            </div>
+  <header id="secHeader">
+    <h1>Bienvenidas a Nuestra Hermandad de la Media Luna</h1>
+  </header>
+  <main>
+    <section id="pagLogin" class="pagGeneral">
+      <div class="classH2">
+        <h2>Inicio de Sesión</h2>
+      </div>
+      <div id="error" class="modal">
+          <i id="frown" class="fas fa-frown" aria-hidden="true"></i>
+          <p>¡Lo sentimos!</p>
+        <p>Ya utilizaste todos tus intentos, en este momento no podrás ingresar.</p>
+      </div>
+      <div class=" imgcontainer ">
+        <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Avatar">
+      </div>
+      
+      <div class="container ">
+        <form>
+          <label id="labelPass" for="psw" class="label1"><b>Ingrese la clave</b></label>
+          <div>
+            <span id="key" class="fas fa-key"></span> 
+            <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
+          </div>
+          <span id="errorMessage" class="errorMessage"></span>
+          <input type="submit" value="Login" id="btnlogin" class="boton">
+        </form>
+      </div>
+    </section>
 
-            <div class=" imgcontainer ">
-                <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Avatar">
-            </div>
-
-            <div class="container ">
-
-                <label id="labelPass" class="labels"><b>Ingrese la clave</b></label>
-                <form>
-                    <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
-                    <span id="errorMessage" class="errorMessage"></span>
-                    <input type="submit" value="Login" id="btnlogin" class="boton">
-                </form>
-            </div>
-        </section>
-
-        <section id="pagCifrado" class="pagGeneral">
-            <div>
-                <table>
-                    <tr>
-                        <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png" alt=""></td>
-                        <td>
-                            <h1>Cifrado y Descifrado de mensajes</h1>
-                        </td>
-                        <td><img id="imgEye" class="imgIcon" src="Img/eye.png" alt=""></td>
-                    </tr>
-                </table>
-            </div>
-
-            <!-- <div class=" imgcontainer ">
-                        <img class="imgIcon" src="Img/eye-slash.png" alt="Avatar " class="avatar ">
-                  </div> -->
-            <div class="clavecipher">
-                <label class="labels"><b>Clave: </b></label>
-                <input type="number" min="1" max="300" id="offset">
-                <label id="aviso" class=""><img id="warning" src="Img/warning.png" alt=""> <b>Recuerda que este
-                        código es la llave para cifrar y descifrar el mensaje. </b></label>
-                <span id="spantxt1" class="errorMessage"></span>
-            </div>
-            <br>
-            <div>
-                <label class="labels"><b>Ingrese el mensaje</b></label>
-                <textarea id="FirstText" class="textarea" rows="10" cols="50"
-                    placeholder="Escribe aqui el mensaje"></textarea>
-            </div>
-            <div class="botones">
-                <input type="submit" value="Cifrar" id="btnCifrar" class="boton">
-                <input type="submit" value="Descifrar" id="btnDescifrar" class="boton">
-                <input type="submit" value="Limpiar" id="btnBorrar" class="boton">
-            </div>
-            <br>
-            <div>
-                <label class="labels"><b>Resultado del mensaje</b></label>
-                <textarea id="resultText" class="textarea" rows="10" cols="50"></textarea>
-            </div>
-            <div class="btnsalir">
-                <input type="submit" value="Salir" id="btnSalir" class="boton">
-            </div>
-
-
-        </section>
-    </main>
-    <footer>
-        <div id="copyright">Copyright&copy; 2019 - Yesseliz Choque - Todos los derechos reservados
-        </div>
-    </footer>
-    <script src="cipher.js "></script>
-    <script src="index.js "></script>
+    <section id="pagCifrado" class="pagGeneral">
+      <div>
+        <table>
+          <tr>
+            <td><img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png" alt=""></td>
+            <td>
+              <h3 class="classH2" id="textH3">Cifrado y Descifrado de mensajes</h3>
+            </td>
+            <td><img id="imgEye" class="imgIcon" src="Img/eye.png" alt=""></td>
+          </tr>
+        </table>
+      </div>
+      <div class="clavecipher">
+        <label class="labels"><b>Clave: </b></label>
+        <input type="number" min="1" max="300" id="offset">
+        <label id="aviso"><img id="warning" src="Img/warning.png" alt="warning"> <b class="txtWarning">Recuerda que este
+            código es la llave para cifrar y descifrar el mensaje. </b></label>
+        <span id="spantxt1" class="errorMessage"></span>
+      </div>
+      <br>
+      <div>
+        <label class="labels" for="FirstText" ><b>Ingrese el mensaje</b></label>
+        <textarea id="FirstText" class="textarea" rows="10" cols="50" placeholder="Escribe aqui el mensaje"></textarea>
+        <span id="spantxt2" class="errorMessage"></span>
+      </div>
+      <div class="botones">
+        <button type="submit" id="btnCifrar" class="boton">Cifrar
+          <i class="fas fa-lock"></i>
+        </button>
+        <button type="submit" id="btnDescifrar" class="boton"> Descifrar
+            <i class="fas fa-lock-open"></i>
+        </button>
+        <button type="submit" id="btnBorrar" class="boton">Limpiar
+            <i class="fas fa-redo"></i>
+        </button>
+      </div>
+      <br>
+      <div>
+        <label class="labels" for="resultText"><b>Resultado del mensaje</b></label>
+        <textarea id="resultText" class="textarea" rows="10" cols="50"></textarea>
+      </div>
+      <div class="btnsalir">
+        <button id="btnSalir" type="submit" class="boton">Salir
+        <i class="fas fa-sign-in-alt"></i></button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="copyright">
+      Copyright&copy; 2019 - Yesseliz Choque - Todos los derechos reservados
+    </div>
+  </footer>
+  <script src="cipher.js "></script>
+  <script src="index.js "></script>
 </body>
 
 </html>
