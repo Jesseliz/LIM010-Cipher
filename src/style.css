@@ -40,6 +40,10 @@
     .btnsalir{
         padding-left: 640px;
     }
+    .modal{
+        font-size: xx-large;
+        height: 30vmin;
+    }
 }
 @media screen and (min-width:480px) and (max-width: 780px){
    
@@ -65,6 +69,7 @@
     }
     .modal{
         font-size: medium;
+        height: 40vmin;
     }
     .botones{
         padding-left: 0px;
@@ -116,10 +121,9 @@ h1{
 .modal{
     font-family: 'Bree Serif', serif;
     width: 75vmin;
-    height: 30vmin;
+    
     background: #e5e1e7;
     color: #323031;
-    font-size: xx-large;
     position: absolute;
     border-radius: 10px;
     z-index: 5;
