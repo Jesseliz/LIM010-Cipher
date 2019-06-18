@@ -42,7 +42,7 @@
     }
     .modal{
         font-size: xx-large;
-        height: 30vmin;
+        height: 28vmin;
     }
 }
 @media screen and (min-width:480px) and (max-width: 780px){
@@ -121,7 +121,6 @@ h1{
 .modal{
     font-family: 'Bree Serif', serif;
     width: 75vmin;
-    
     background: #e5e1e7;
     color: #323031;
     position: absolute;
