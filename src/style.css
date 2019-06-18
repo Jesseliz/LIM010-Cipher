@@ -3,10 +3,99 @@
 
 /* Acá van tus reglas de estilo */
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Courgette|Lobster&display=swap');
-header{
-    width: 50%;
-    margin: 0 auto;
+@media screen and (min-width: 780px) and (max-width:2024px){
+    header{
+        width: 50%;
+        margin: 0 auto;
+        display: flexbox;
+    }
+    #pagLogin {
+        width: 35%;
+        padding: 30px;
+    }
+    #pagCifrado{
+        width: 50%;
+         padding: 15px;
+    }
+    .imgIcon{
+        margin:10px auto;
+        display:block;
+        width: 90px;
+    }
+    #imgEyeLash{
+        position: absolute;
+        top: 48px;
+    }
+    #imgEye{
+        position: absolute;
+        top: 50px;
+        margin-left: 43%;
+    }
+    #textH3{
+        font-size: 42px;
+    }
+    .botones{
+        padding-left: 170px;
+    }
+    .btnsalir{
+        padding-left: 640px;
+    }
 }
+@media screen and (min-width:480px) and (max-width: 780px){
+   
+}
+@media screen and (max-width:480px){
+    header{display: contents;
+    }
+    header h1{    
+        font-size: 30px;    
+    }
+    #pagLogin{     
+        width: 80%; 
+        padding: 20px;
+        /* display: table-cell;    */
+    }
+    #pagCifrado{
+        width: 80%;
+         padding: 12px;
+    }
+    #copyright{
+        font-size: 14px !important;
+        margin-left: -2% !important;
+    }
+    .modal{
+        font-size: medium;
+    }
+    .botones{
+        padding-left: 0px;
+    }
+    #textH3{
+        font-size: 20px;
+        width: 230px;
+        margin-left: 20px;
+    }
+    .imgIcon{
+        margin:10px auto;
+        display:block;
+        width: 40px;
+    }
+    #imgEyeLash{
+        position: absolute;
+        top: 30px;
+    }
+    #imgEye{
+        position: absolute;
+        top: 30px;
+        margin-left: 65%;
+    }
+    .btnsalir{
+        padding-left: 165px;
+    }
+    #aviso{
+        display: none;
+    }
+}
+
 input[type=password] {
     width: 100%;
     padding: 12px 35px;
@@ -39,44 +128,25 @@ h1{
     right: 0;
     text-align: center;
 }
-.psw{
-background-image: url(Img/clave.png);
-}
  .classH2{
     font-size: 20px;
     text-align: center;
     font-family: 'Lobster', cursive;
 } 
 #textH3{
-    font-size: 42px;
     color: #6f0fb5;
 }
 .label1{
     font-family: 'Bree Serif', serif;
     font-size: 25px;
 }
-
 #btnlogin {
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    cursor: pointer;
     width: 100%;
-    font-size: 20px;
-    line-height: 18px;
-    border-radius: 7px;
-    font-family: Georgia, serif;
     background-image: linear-gradient(to right, rgb(16, 136, 53) 0%, #2bc731 50%, rgb(8, 173, 82) 100%);
-    /* box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;  */
     border: 2px solid rgb(10, 125, 67);
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.imgIcon{
-    margin:10px auto;
-    display:block;
-    width: 90px;
 }
 .labels{
     font-size: x-large;
@@ -86,6 +156,9 @@ background-image: url(Img/clave.png);
     margin-top: 12px;
     padding: 0em;
     border-radius: 0em;
+    background-color: rgba(223, 177, 207, 0.74);
+    border-radius: 20px;
+    border: 2px solid rgb(14, 15, 15);
 }
 #offset{
     border: 2px outset #1C6EA4;
@@ -95,23 +168,9 @@ background-image: url(Img/clave.png);
     text-align: center;
     font-weight: bold;
 }
-#pagLogin {
-    width: 35%;
-    padding: 30px;
-    background-color: rgba(223, 177, 207, 0.74);
-    border-radius: 20px;
-    border: 2px solid rgb(14, 15, 15);
-    /* display:flex;
-    flex-direction: column; */
-}
+
 .hide {display:none;}
-#pagCifrado{
-    width: 50%;
-     padding: 15px;
-     background-color: rgba(223, 177, 207, 0.74);
-    border-radius: 20px;
-    border: 2px solid rgb(14, 15, 15);
-}
+
 .textarea{
     width: 100%;
     padding: 12px 20px;
@@ -150,13 +209,8 @@ background-image: url(Img/clave.png);
     background-image: linear-gradient(to right, #b7aeae 0%, #252525 50%, rgb(113, 112, 109) 100%);
     border: 2px solid #101010;
 }
-.botones{
-    padding-left: 170px;
-    /* display: flex; */
-}
-.btnsalir{
-    padding-left: 640px;
-}
+
+
 #pag1{
     background-image: url(Img/hermandad.png)
 }
@@ -194,7 +248,6 @@ background-image: url(Img/clave.png);
      text-align: center;
      color:black;
 }
-
 #key{
     position: absolute;
     margin-top: 20px;

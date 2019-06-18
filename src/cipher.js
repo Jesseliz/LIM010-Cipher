@@ -5,10 +5,10 @@ window.cipher = {
     for (let i = 0; i < string.length; i++) { //recorrer las letras del texto a cifrar
       let texto = string.charCodeAt(i);
       
-      if(texto >= 65 && texto <= 90){
+      if(texto >= 65 && texto <= 90){ //MAYUSCULAS
         ubicacion = (texto - 65 + parseInt(offset)) % 26 + 65;
       }
-      else if(texto >= 97 && texto <= 122){
+      else if(texto >= 97 && texto <= 122){ //minusculas
         ubicacion =   (texto - 97 + parseInt(offset)) % 26 + 97;
       }
       else if(texto >= 33 && texto <= 64){
