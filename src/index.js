@@ -16,7 +16,7 @@ btnlogin.addEventListener('click', (evento) => {
         if (password.value === 'LABORATORIA') {
             paglogin.classList.add('hide');
             secHeader.classList.add('hide');
-            pagCifrado.classList.remove('hide');
+            pagCifrado.classList.remove('hide');            
         }
         else {
             intentos++;
