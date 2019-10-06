@@ -145,8 +145,8 @@ h1{
 }
 #btnlogin {
     width: 100%;
-    background-image: linear-gradient(to right, rgb(16, 136, 53) 0%, #2bc731 50%, rgb(8, 173, 82) 100%);
-    border: 2px solid rgb(10, 125, 67);
+    background-image: linear-gradient(to right, #c60f6d 0%, #de60c5 50%, rgb(178, 116, 181) 100%);
+    border: 2px solid rgb(138, 13, 127);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,15 +197,17 @@ h1{
     display: inline-block
 }
 #btnDescifrar{
-    background-image: linear-gradient(to right, rgb(16, 136, 53) 0%, #2bc731 50%, rgb(8, 173, 82) 100%);
-    border: 2px solid rgb(10, 125, 67);
+    /* background-image: linear-gradient(to right, rgb(16, 136, 53) 0%, #2bc731 50%, rgb(8, 173, 82) 100%); */
+    /* border: 2px solid rgb(10, 125, 67); */
+    background-image: linear-gradient(to right, #c60f6d 0%, #de60c5 50%, rgb(178, 116, 181) 100%);
+    border: 2px solid rgb(183, 13, 168);
 }
 #btnCifrar{
-    background-image: linear-gradient(to right, rgb(169, 20, 96) 0%, rgba(216, 53, 120, 0.58) 50%, rgba(224, 97, 149, 0.58) 100%);
+    background-image: linear-gradient(to right, rgb(224, 191, 208) 0%, rgba(216, 53, 120, 0.58) 50%, rgba(207, 96, 142, 0.58) 100%);
     border: 2px solid rgb(169, 20, 96);
 }
 #btnBorrar{
-    background-image: linear-gradient(to right, #b7aeae 0%, #d2a0de 50%, rgb(113, 112, 109) 100%);
+    background-image: linear-gradient(to right, #b7aeae 0%, #d4cdd6 50%, rgb(113, 112, 109) 100%);
     border: 2px solid #827a7a;
 }
 #btnSalir{
