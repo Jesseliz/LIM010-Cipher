@@ -12,24 +12,26 @@
 <!-- fd -->
 <body id="pag1" class="container">
   <header id="secHeader" class="encabezado">
-    <h1>Bienvenidas a Nuestra Hermandad de la Media Luna</h1>
+    <h1>
+      Welcome to Emergency Cipher of women</h1>
   </header>
   <main>
     <section id="pagLogin" class="pagGeneral">
       <div class="classH2">
-        <h2>Inicio de Sesión</h2>
+        <h2>Log In</h2>
       </div>
       <div id="error" class="modal">
         <i id="frown" class="fas fa-frown" aria-hidden="true"></i>
-        <p>¡Lo sentimos!</p>
-        <p>Ya utilizaste todos tus intentos, en este momento no podrás ingresar.</p>
+        <p>¡We are sorry!</p>
+        <p>
+          You have already used all your attempts, at this moment you will not be able to enter.</p>
       </div>
       <div>
         <img id="imglogin" class="imgIcon" src="Img/medialuna.png" alt="Media luna">
       </div>
       <div>
         <form>
-          <label id="labelPass" for="psw" class="label1"><b>Ingrese la clave</b></label>
+          <label id="labelPass" for="psw" class="label1"><b>Enter the password</b></label>
           <div>
             <span id="key" class="fas fa-key"></span>
             <input type="password" placeholder="Escriba la clave " name="psw" id="psw" required>
@@ -43,16 +45,15 @@
     <section id="pagCifrado" class="pagGeneral">
       <div>
         <img id="imgEyeLash" class="imgIcon" src="Img/eye-slash.png" alt="Eyelashicon">
-        <h3 class="classH2" id="textH3">Cifrado y Descifrado de mensajes</h3>
+        <h3 class="classH2" id="textH3">Cipher and Decipher Messagues</h3>
         <img id="imgEye" class="imgIcon" src="Img/eye.png" alt="eye icon">
       </div>
       <form action="#">
         <div>
-          <label class="labels" for="offset"><b>Clave: </b></label>
+          <label class="labels" for="offset"><b>key: </b></label>
           <input type="number" min="1" max="300" id="offset">
 
-          <label id="aviso"><img id="warning" src="Img/warning.png" alt="warning"> <b class="txtWarning">Recuerda que
-              este código es la llave para cifrar y descifrar el mensaje. </b></label>
+          <label id="aviso"><img id="warning" src="Img/warning.png" alt="warning"> <b class="txtWarning">Remember that this code is the key to encrypt and decrypt the message. </b></label>
         </div>
 
         <span id="spantxt1" class="errorMessage"></span>
@@ -60,36 +61,36 @@
 
       <br>
       <div>
-        <label class="labels" for="FirstText"><b>Ingrese el mensaje</b></label>
-        <textarea id="FirstText" class="textarea" rows="10" cols="50" placeholder="Escribe aqui el mensaje"></textarea>
+        <label class="labels" for="FirstText"><b>Enter the message</b></label>
+        <textarea id="FirstText" class="textarea" rows="10" cols="50" placeholder="Write the message here"></textarea>
         <span id="spantxt2" class="errorMessage"></span>
       </div>
       <div class="botones">
-        <button type="submit" id="btnCifrar" class="boton">Cifrar
+        <button type="submit" id="btnCifrar" class="boton">Cipher
           <i class="fas fa-lock"></i>
         </button>
-        <button type="submit" id="btnBorrar" class="boton">Limpiar
+        <button type="submit" id="btnBorrar" class="boton">Clean
           <i class="fas fa-redo"></i>
         </button>
-        <button type="submit" id="btnDescifrar" class="boton"> Descifrar
+        <button type="submit" id="btnDescifrar" class="boton"> Decipher
           <i class="fas fa-lock-open"></i>
         </button>
         
       </div>
       <br>
       <div>
-        <label class="labels" for="resultText"><b>Resultado del mensaje</b></label>
+        <label class="labels" for="resultText"><b>Message Result</b></label>
         <textarea id="resultText" class="textarea" rows="10" cols="50"></textarea>
       </div>
       <div class="btnsalir">
-        <button id="btnSalir" type="submit" class="boton">Salir
+        <button id="btnSalir" type="submit" class="boton">Log out
           <i class="fas fa-sign-in-alt"></i></button>
       </div>
     </section>
   </main>
   <footer>
     <div id="copyright">
-      Copyright&copy; 2019 - Yesseliz Choque - Todos los derechos reservados
+      Copyright&copy; 2019 - Yesseliz Choque - All rights reserved
     </div>
   </footer>
   <script src="cipher.js "></script>
